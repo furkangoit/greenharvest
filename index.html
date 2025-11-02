@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenHarvest - Fresh organic vegetables delivered straight to your doorstep">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles-figma.css">
+  <link rel="stylesheet" href="css/responsive-figma.css">
+
+  <title>GreenHarvest - Organic Vegetables</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <svg class="logo-icon" width="16" height="16" viewBox="0 0 16 16">
+            <use href="assets/sprite.svg#icon-logo"></use>
+          </svg>
+          <span class="logo-text">GREENHARVEST</span>
+        </a>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="nav-list" id="navList">
+          <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="#vegetables" class="nav-link">Vegetables</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Contacts</a></li>
+        </ul>
+
+        <!-- Cart & Menu Buttons -->
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <!-- Shopping Cart Button -->
+          <button class="cart-btn" type="button" aria-label="Shopping cart">
+            <svg class="cart-icon" width="24" height="24" stroke="currentColor" fill="none">
+              <use href="assets/sprite.svg#icon-cart"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu">
+            <svg class="menu-icon" width="24" height="24" stroke="currentColor" fill="none">
+              <use href="assets/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <button class="mobile-menu-close" id="menuClose" type="button" aria-label="Close menu">
+          <svg class="close-icon" width="24" height="24" stroke="currentColor" fill="none">
+            <use href="assets/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item"><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+          <li class="mobile-nav-item"><a href="#vegetables" class="mobile-nav-link">Vegetables</a></li>
+          <li class="mobile-nav-item"><a href="#reviews" class="mobile-nav-link">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Organic vegetables to your diet today!</h1>
+          <p class="hero-text">
+            Our expertly curated vegetable baskets are made with the freshest,
+            highest quality vegetables available. Fresh Harvest Box has got you covered.
+            Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.
+          </p>
+          <a href="#your-order" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="how-it-works-header">
+          <p class="how-it-works-subtitle">To order your vegetable basket,</p>
+          <h2 class="how-it-works-title">Simply follow these easy steps</h2>
+        </div>
+
+        <p class="section-description">
+          Our baskets are assembled with care and delivered straight to your doorstep,
+          so you can enjoy the taste of fresh fruit without worrying about.
+          Whether you're looking for a healthy snack or a thoughtful gift,
+          Fresh Harvest Box has got you covered.
+        </p>
+
+        <ol class="steps-list">
+          <li class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p class="step-text">
+                <strong>Just choose</strong> the vegetable you want to order by
+                clicking on the checkboxes next to it.
+              </p>
+            </div>
+            <div class="step-image-wrapper">
+              <img src="images/how-it-works/step-1.png" srcset="images/how-it-works/step-1@2x.png 2x"
+                alt="Choose vegetables" class="step-image">
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p class="step-text">
+                <strong>Click on the basket</strong> and fill out the form.
+              </p>
+            </div>
+            <div class="step-image-wrapper">
+              <img src="images/how-it-works/step-2.png" srcset="images/how-it-works/step-2@2x.png 2x"
+                alt="Fill the form" class="step-image">
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p class="step-text">
+                <strong>Sit back and relax!</strong> Your fresh vegetables
+                basket will be delivered.
+              </p>
+            </div>
+            <div class="step-image-wrapper">
+              <img src="images/how-it-works/step-3.png" srcset="images/how-it-works/step-3@2x.png 2x" alt="Get delivery"
+                class="step-image">
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ADVERTISEMENT/DISCOUNT SECTION -->
+    <section class="advertisement">
+      <div class="container">
+        <div class="advertisement-content">
+          <h2 class="advertisement-title">
+            Discount up to <span class="highlight">40%!</span> Taste the vitamins and
+            keep your health
+          </h2>
+          <p class="advertisement-text">
+            Our organic vegetables are hand-picked from local farms and delivered straight
+            to your doorstep, ensuring that you get the freshest and most nutritious produce possible.
+            Taste the difference and feel the benefits of eating fresh, organic vegetables!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VEGETABLES SECTION -->
+    <section class="vegetables" id="vegetables">
+      <div class="container">
+        <h2 class="section-title">Organic Vegetables</h2>
+        <p class="section-subtitle">
+          Our organic vegetables are grown using sustainable farming practices
+          and are free from harmful pesticides and chemicals.
+        </p>
+
+        <ul class="vegetables-list">
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/carrot.png" srcset="images/vegetables/carrot@2x.png 2x" alt="Carrot"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Carrot</h3>
+            <p class="vegetable-category">Plant</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">100 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add carrot to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/broccoli.png" srcset="images/vegetables/broccoli@2x.png 2x" alt="Broccoli"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Broccoli</h3>
+            <p class="vegetable-category">Cruciferous</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">80 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add broccoli to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/tomato.png" srcset="images/vegetables/tomato@2x.png 2x" alt="Tomato"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Tomato</h3>
+            <p class="vegetable-category">Fruit vegetable</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">40 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add tomato to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/eggplant.png" srcset="images/vegetables/eggplant@2x.png 2x" alt="Eggplant"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Eggplant</h3>
+            <p class="vegetable-category">Fruit vegetable</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">60 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add eggplant to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/corn.png" srcset="images/vegetables/corn@2x.png 2x" alt="Sweet corn"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Sweet Corn</h3>
+            <p class="vegetable-category">Cereal</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">60 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add corn to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/radish.png" srcset="images/vegetables/radish@2x.png 2x" alt="Radish"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Radish</h3>
+            <p class="vegetable-category">Root vegetable</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">90 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add radish to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/cabbage.png" srcset="images/vegetables/cabbage@2x.png 2x" alt="Cabbage"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Cabbage</h3>
+            <p class="vegetable-category">Cruciferous</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">50 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add cabbage to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/potato.png" srcset="images/vegetables/potato@2x.png 2x" alt="Potato"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Potato</h3>
+            <p class="vegetable-category">Root vegetable</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">80 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add potato to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="vegetable-item">
+            <div class="vegetable-image-wrapper">
+              <img src="images/vegetables/leek.png" srcset="images/vegetables/leek@2x.png 2x" alt="Leek"
+                class="vegetable-image">
+            </div>
+            <h3 class="vegetable-name">Leek</h3>
+            <p class="vegetable-category">Onion family</p>
+            <div class="vegetable-footer">
+              <span class="vegetable-price">60 UAH / kg</span>
+              <button class="btn-add-to-cart" type="button" aria-label="Add leek to cart">
+                <svg class="cart-icon-small" width="20" height="20" stroke="white" fill="none">
+                  <use href="assets/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <ul class="reviews-list">
+          <li class="review-item">
+            <div class="review-header">
+              <img src="images/reviews/customer-1.png" srcset="images/reviews/customer-1@2x.png 2x" alt="John Doe"
+                class="review-avatar">
+              <div class="review-author">
+                <h3 class="review-name">John Doe</h3>
+                <div class="review-rating">
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "I love the convenience of having fresh, organic vegetables delivered to my doorstep.
+              The quality is always top-notch, and the delivery is always on time."
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="review-header">
+              <img src="images/reviews/customer-2.png" srcset="images/reviews/customer-2@2x.png 2x" alt="Jane Smith"
+                class="review-avatar">
+              <div class="review-author">
+                <h3 class="review-name">Jane Smith</h3>
+                <div class="review-rating">
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#E0E0E0">
+                    <use href="assets/sprite.svg#icon-star-empty"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "The organic vegetables from this company are amazing! They are fresh, flavorful,
+              and have helped me and my family eat healthier."
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="review-header">
+              <img src="images/reviews/customer-3.png" srcset="images/reviews/customer-3@2x.png 2x" alt="Bob Johnson"
+                class="review-avatar">
+              <div class="review-author">
+                <h3 class="review-name">Bob Johnson</h3>
+                <div class="review-rating">
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon" width="16" height="16" fill="#FD9222">
+                    <use href="assets/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "I highly recommend this service to anyone looking for fresh, organic vegetables.
+              The variety is great and the prices are very reasonable."
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- YOUR ORDER SECTION -->
+    <section class="your-order" id="your-order">
+      <div class="container">
+        <div class="order-content">
+          <div class="order-form-wrapper">
+            <h2 class="section-title" style="text-align: left;">Fresh Harvest Box has got you covered</h2>
+            <p class="section-subtitle" style="text-align: left;">
+              Our boxes are packed with delicious, nutritious vegetables,
+              perfect for anyone looking to eat healthier or support local farmers.
+            </p>
+
+            <form class="order-form" id="orderForm">
+              <div class="form-group">
+                <input type="email" class="form-input" id="email" name="email" placeholder="Enter your email"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Enter your comment"
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+
+          <div class="order-image-wrapper">
+            <img src="images/order/vegetables-box.png" srcset="images/order/vegetables-box@2x.png 2x"
+              alt="Fresh vegetables box" class="order-image">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <svg class="logo-icon" width="16" height="16" viewBox="0 0 16 16">
+              <use href="assets/sprite.svg#icon-logo"></use>
+            </svg>
+            <span class="logo-text">GREENHARVEST</span>
+          </a>
+          <p class="footer-slogan">
+            Fresh vegetables delivered straight to your doorstep
+          </p>
+
+          <!-- Social Links -->
+          <div class="social-links" style="margin-top: 24px;">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://www.instagram.com/goit.turkiye/" class="social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="Instagram">
+                  <svg class="social-icon" width="20" height="20" stroke="currentColor" fill="none">
+                    <use href="assets/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://m.youtube.com/@GoITTurkey" class="social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="YouTube">
+                  <svg class="social-icon" width="20" height="20" stroke="currentColor" fill="none">
+                    <use href="assets/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/" class="social-link"
+                  target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg class="social-icon" width="20" height="20" stroke="currentColor" fill="none">
+                    <use href="assets/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <h3 class="footer-nav-title">Navigation</h3>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#how-it-works" class="footer-nav-link">How It Works</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#vegetables" class="footer-nav-link">Vegetables</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#reviews" class="footer-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h3 class="footer-contact-title">Contacts</h3>
+          <address class="footer-address">
+            <a href="tel:+380684439426" class="footer-phone">+38 (068) 443-94-26</a>
+            <p class="footer-address-text">
+              1678 S. Pioneer Road<br>
+              Salt Lake City<br>
+              UT 84104
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2024 GreenHarvest. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

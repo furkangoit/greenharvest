@@ -1,0 +1,304 @@
+/* ====================================
+   RESPONSIVE STYLES (FIGMA BREAKPOINTS)
+   ==================================== */
+
+/* Mobile: 375px+ */
+@media screen and (min-width: 375px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+}
+
+/* Tablet: 768px+ */
+@media screen and (min-width: 768px) {
+    :root {
+        --font-size-h1-mobile: 64px;
+        --font-size-h2: 48px;
+        --spacing-3xl: 100px;
+        --spacing-4xl: 120px;
+        --container-padding-mobile: 32px;
+    }
+
+    .container {
+        padding: 0 var(--container-padding-tablet);
+    }
+
+    /* Header */
+    .nav-list {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .cart-btn {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        background-image: url('../images/hero/hero-bg-tablet.jpg');
+        min-height: 600px;
+        padding: var(--spacing-4xl) 0;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-h1-tablet);
+    }
+
+    .hero-content {
+        max-width: 500px;
+    }
+
+    /* How It Works */
+    .steps-list {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .step-item {
+        flex-direction: row;
+        padding: var(--spacing-xl);
+    }
+
+    .step-image-wrapper {
+        display: block;
+        width: 180px;
+        height: 180px;
+    }
+
+    .step-number {
+        width: 56px;
+        height: 56px;
+        font-size: 28px;
+    }
+
+    /* Advertisement */
+    .advertisement-title {
+        font-size: 56px;
+    }
+
+    /* Vegetables */
+    .vegetables-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    /* Reviews */
+    .reviews-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    /* Your Order */
+    .order-content {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-3xl);
+    }
+
+    .order-form-wrapper {
+        max-width: 500px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-3xl);
+    }
+}
+
+/* Desktop: 1280px+ */
+@media screen and (min-width: 1280px) {
+    :root {
+        --font-size-h1-mobile: 80px;
+        --font-size-h2: 56px;
+        --spacing-4xl: 150px;
+    }
+
+    /* Header */
+    .nav-list {
+        gap: var(--spacing-xl);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-base);
+    }
+
+    /* Hero */
+    .hero {
+        background-image: url('../images/hero/hero-bg-desktop.jpg');
+        min-height: 700px;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-h1-desktop);
+        max-width: 600px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero-text {
+        font-size: var(--font-size-large);
+        max-width: 500px;
+    }
+
+    /* How It Works */
+    .steps-list {
+        gap: var(--spacing-2xl);
+    }
+
+    .step-item {
+        padding: var(--spacing-2xl);
+        gap: var(--spacing-xl);
+    }
+
+    .step-image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .step-number {
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+    }
+
+    .step-text {
+        font-size: var(--font-size-large);
+    }
+
+    /* Advertisement */
+    .advertisement-title {
+        font-size: 64px;
+    }
+
+    .advertisement-text {
+        font-size: var(--font-size-large);
+    }
+
+    /* Vegetables */
+    .vegetables-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .vegetable-image {
+        max-width: 220px;
+    }
+
+    /* Reviews */
+    .reviews-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .review-item {
+        padding: var(--spacing-xl);
+    }
+
+    /* Your Order */
+    .order-content {
+        gap: var(--spacing-4xl);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: var(--spacing-4xl);
+    }
+}
+
+/* Large Desktop: 1440px+ */
+@media screen and (min-width: 1440px) {
+    .hero-title {
+        font-size: 96px;
+    }
+
+    .advertisement-title {
+        font-size: 72px;
+    }
+}
+
+/* Retina Display Support */
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../images/hero/hero-bg-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../images/hero/hero-bg-tablet@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../images/hero/hero-bg-desktop@2x.jpg');
+    }
+}
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference) {
+
+    .vegetable-item,
+    .review-item,
+    .step-item {
+        transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    }
+
+    .btn {
+        transition: all var(--transition-normal);
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed */
+}
+
+/* Print Styles */
+@media print {
+
+    .header,
+    .mobile-menu,
+    .btn,
+    .social-links {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    .hero {
+        background-image: none;
+        background-color: var(--color-hero-green);
+        page-break-after: always;
+    }
+}
+
+/* Accessibility: High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        border-width: 3px;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+        outline: 3px solid var(--color-primary-green);
+        outline-offset: 2px;
+    }
+}
